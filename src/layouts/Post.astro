@@ -1,0 +1,27 @@
+---
+import { Picture } from 'astro:assets';
+import Main from './Main.astro';
+import Date from '../components/Date.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Main title={frontmatter.title} description={frontmatter.description}>
+    <p><small>When you buy through links on our site, we may earn an affiliate commission.</small></p>
+
+    <h1>{frontmatter.title}</h1>
+
+    <p><small>Published on <Date date={frontmatter.pubDate} /></small></p>
+
+    <Picture
+        src={frontmatter.image}
+        alt={frontmatter.title}
+        width="720"
+        height="480"
+        densities={[1, 2]}
+        formats={['avif', 'webp']}
+        fallbackFormat='webp'
+    />
+
+    <slot />
+</Main>

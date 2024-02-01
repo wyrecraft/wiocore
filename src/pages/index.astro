@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import Main from '../layouts/Main.astro';
+import Card from '../components/Card.astro';
+
+const posts = (await getCollection('posts')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<Main> {
+	posts.map((post) => (
+		<Card post={post} />
+	))
+}
+</Main>

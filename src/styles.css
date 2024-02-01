@@ -1,0 +1,327 @@
+/* Reset styles */
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+*:focus, *:focus-visible {
+	outline: solid 1px var(--accent-main);
+	border-radius: 0.125rem;
+}
+
+html {
+	font: inherit;
+	font-size: 100%;
+	line-height: 1.5;
+	hanging-punctuation: first last;
+	scroll-padding-top: 2.5rem;
+
+	@media screen and (max-width: 636px) {
+		font-size: 80%;
+	}
+}
+
+@media (prefers-reduced-motion: no) {
+	:has(:target) {
+		scroll-behavior: smooth;
+	}
+}
+
+p, h1, h2, h3 {
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+}
+
+a {
+	color: inherit;
+}
+
+img, picture, video, canvas {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+p, li, h1, h2, h3, blockquote, img, picture, video, canvas, input, textarea, button, table {
+	margin-bottom: 1.25rem;
+}
+
+.small p, .small li, .small h1, .small h2, .small h3, .small blockquote, .small img, .small picture, .small video, .small canvas, .small input, .small textarea, .small button, .small table {
+	margin-bottom: 1rem;
+}
+
+img, picture, video, canvas {
+	border-radius: 0.5rem;
+}
+
+input, textarea, button {
+	border-radius: 0.25rem;
+}
+
+/* Themes */
+
+:root[data-theme="light"] {
+	--bg-main: hsl(0, 0%, 95%);
+	--bg-alt: hsl(0, 0%, 90%);
+	--text-main: hsl(0, 0%, 5%);
+	--text-alt: hsl(0, 0%, 50%);
+	--text-button: hsl(0, 0%, 95%);
+	--accent-main: hsl(235, 100%, 60%);
+	--accent-alt: hsl(235, 100%, 50%);
+	
+	#dark {
+		display: none;
+	}
+}
+
+:root[data-theme="dark"] {
+	--bg-main: hsl(0, 0%, 5%);
+	--bg-alt: hsl(0, 0%, 10%);
+	--text-main: hsl(0, 0%, 95%);
+	--text-alt: hsl(0, 0%, 50%);
+	--text-button: hsl(0, 0%, 95%);
+	--accent-main: hsl(235, 100%, 60%);
+	--accent-alt: hsl(235, 100%, 50%);
+
+	#light {
+		display: none;
+	}
+}
+
+/* Styles */
+
+body {
+	color: var(--text-main);
+	background-color: var(--bg-main);
+	max-width: 48rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+	display: flex; 
+	flex-direction: column;
+	min-height: 100svh;
+	overflow-y: scroll;
+	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+main {
+	margin-block: 3rem;
+}
+
+section {
+	margin-bottom: 3.75rem;
+}
+
+section h3, section p {
+	margin-bottom: 0.625rem;
+}
+
+section h3, section a {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+article h2, article h3 {
+	margin-top: 3.75rem;
+}
+
+.small h2, .small h3 {
+	margin-top: 3rem;
+}
+
+section h3 {
+	margin-top: 0;
+}
+  
+header, footer {
+	min-height: 6rem;
+	display: flex;
+	align-items: center;
+}
+
+header {
+	justify-content: space-between;
+	border-bottom: 1px solid var(--accent-main);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	margin-top: auto;
+	border-top: 1px solid var(--accent-main);
+}
+
+blockquote {
+	border-left: 4px solid var(--accent-main);
+	padding-left: 1rem;
+	margin-block: 2.5rem;
+}
+
+p, a, ol, ul, input, textarea, button, table {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+.small p, .small a, .small ol, .small ul, .small input, .small textarea, .small button, .small table {
+	font-size: 1rem;
+}
+
+li {
+	margin-top: 1.25rem;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em, blockquote {
+	font-style: italic;
+}
+
+small {
+	font-size: 1rem;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+	line-height: 1.125;
+}
+
+h1 {
+	font-size: 2.75rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+.small h2 {
+	font-size: 1.75rem;
+}
+
+.small h3 {
+	font-size: 1.25rem;
+}
+
+ol, ul {
+	margin-left: 1.5rem;
+}
+
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ul li li {
+	list-style-type: circle;
+}
+
+a, a img, button, #light, #dark {
+	transition: 0.125s;
+}
+
+a {
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.3125rem;
+}
+
+a:hover, a:focus {
+	color: var(--accent-main);
+	text-decoration-color: var(--accent-main);
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a {
+	margin-right: 1rem;
+}
+
+a img:hover, a img:focus {
+	box-shadow: 0 0 1rem var(--accent-main);
+}
+
+input, textarea, button {
+	width: 100%;
+}
+
+input, textarea {
+	padding-left: 1rem;
+	color: var(--text-main);
+	background-color: var(--bg-alt);
+}
+
+input, button {
+	height: 3rem;
+}
+
+textarea {
+	resize: none;
+	height: 9rem;
+	padding-top: 0.55rem;
+}
+
+::placeholder {
+	color: var(--text-alt);
+}
+
+button {
+	cursor: pointer;
+	padding-inline: 1rem;
+	color: var(--text-button);
+	background-color: var(--accent-main);
+}
+
+button:hover, button:focus {
+	background-color: var(--accent-alt);
+}
+
+#button {
+	width: fit-content;
+	height: fit-content;
+	padding: 0;
+	margin: 0;
+	background: none;
+	font-size: 0;
+}
+
+svg {
+	vertical-align: middle;
+}
+
+#logo, #light, #dark {
+	fill: var(--text-main);
+}
+
+#logo:hover, #logo:focus, #light:hover, #light:focus, #dark:hover, #dark:focus {
+	fill: var(--accent-main);
+}
+
+table, th, td {
+	border: 1px solid var(--text-alt);
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td {
+	padding: 0.25rem 0.5rem;
+	text-align: left;
+	vertical-align: middle;
+}
+
+th:last-child, td:last-child {
+	text-align: center;
+}
