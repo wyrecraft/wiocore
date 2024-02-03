@@ -1,14 +1,12 @@
 ---
 import { Picture } from 'astro:assets';
-import { getCollection } from "astro:content";
-import Date from './Date.astro';
+import Date from '../components/Date.astro';
 
-const posts = await getCollection('posts');
 const { post } = Astro.props;
 ---
 
-<section class="card-compact">
-    <div class="card-compact-section">
+<section class="card">
+    <div class="card-section">
         <a href={`/posts/${post.slug}/`}>
             <Picture
                 src={post.data.image}
@@ -22,7 +20,7 @@ const { post } = Astro.props;
         </a>
     </div>
 
-    <div class="card-compact-section">
+    <div class="card-section">
         <h3>
             <a href={`/posts/${post.slug}/`}>
                 {post.data.title}

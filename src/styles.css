@@ -152,11 +152,7 @@ section h3, section a {
 	margin-top: 0;
 }
 
-.card-full {
-	margin-bottom: 3.75rem;
-}
-
-.card-compact {
+.card {
 	display: flex;
 	align-items: top;
 	justify-content: space-between;
@@ -164,8 +160,21 @@ section h3, section a {
 	margin-bottom: 1.25rem;
 }
 
-.card-compact-section, .card-compact-section {
+.card-section {
 	width: 50%;
+}
+
+@media screen and (max-width: 636px) {
+	.card {
+		display: block;
+		align-items: top;
+		justify-content: space-between;
+		margin-bottom: 3.75rem;
+	}
+	
+	.card-section {
+		width: 100%;
+	}
 }
 
 blockquote {

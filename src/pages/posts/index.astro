@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Page from '../../layouts/Page.astro';
-import CardFull from '../../components/CardFull.astro';
+import Card from '../../components/Card.astro';
 
 const posts = (await getCollection('posts')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -12,7 +12,7 @@ const title = "Posts";
 <Page title={title}>
 	{
 		posts.map((post) => (
-			<CardFull post={post} />
+			<Card post={post} />
 		))
 	}
 </Page>
