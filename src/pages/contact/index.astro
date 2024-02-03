@@ -1,5 +1,5 @@
 ---
-import Page from '../layouts/Page.astro';
+import Page from '../../layouts/Page.astro';
 
 const title = "Contact";
 ---
@@ -15,7 +15,7 @@ const title = "Contact";
 		<input type="text" name="name" placeholder="Name" minlength="2" required />
 		<input type="email" name="email" placeholder="Email" required />
 		<textarea name="message" placeholder="Message" minlength="10" required></textarea>
-		<input type="hidden" name="redirectTo" value="/thanks">
+		<input type="hidden" name="redirectTo" value="/contact/thanks">
 		<button type="submit">Send</button>
 	</form>
 
