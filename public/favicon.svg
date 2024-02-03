@@ -1,1 +1,9 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#192dff;}.cls-2{fill:#fff;}</style></defs><rect class="cls-1" width="128" height="128"/><path class="cls-2" d="M32,42.47H44.08L50.75,71.4h.4l7-28.93H70L77,71.23h.37L84,42.47H96L84.31,85.53H71.67l-7.4-27.08h-.54l-7.4,27.08H43.72Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.favicon{fill:#192dff;}
+</style>
+<path class="favicon" d="M16,31.7h18.1l10,43.4h0.6l10.4-43.4h17.8l10.6,43.1h0.5l9.8-43.1H112L94.5,96.3h-19L64.4,55.7h-0.8L52.5,96.3
+	H33.6L16,31.7z"/>
+</svg>
