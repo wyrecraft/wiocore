@@ -7,7 +7,7 @@ const title = "Contact";
 <Page title={title}>
 	<p>Have a question or want to share something? Feel free to reach out using the form below, and we’ll get back to you soon.</p>
 
-	<form action="https://api.staticforms.xyz/submit" method="POST">
+	<form action="https://api.staticforms.xyz/submit" method="post">
 		<input type="hidden" name="accessKey" value="7ca5808b-fc89-4353-a26d-0b1f6a6b4244">
 		<input type="hidden" name="subject" value="Contact Form">
 		<input type="text" name="honeypot" style="display: none;">
@@ -15,7 +15,7 @@ const title = "Contact";
 		<input type="text" name="name" placeholder="Name" minlength="2" required />
 		<input type="email" name="email" placeholder="Email" required />
 		<textarea name="message" placeholder="Message" minlength="10" required></textarea>
-		<input type="hidden" name="redirectTo" value="https://wyrelabs.com/thanks">
+		<input type="hidden" name="redirectTo" value="/thanks">
 		<button type="submit">Send</button>
 	</form>
 
