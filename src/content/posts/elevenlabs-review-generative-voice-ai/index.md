@@ -1,6 +1,6 @@
 ---
 title: "ElevenLabs Review: Generative Voice AI"
-description: "Explore the revolutionary world of generative voice AI with ElevenLabs in our comprehensive review, revealing cutting-edge features, unbiased analysis, and user experiences that make it a top choice for transforming audio interactions."
+description: "Discover ElevenLabs' voice AI in our concise review, featuring advanced features and unbiased analysis for top-notch audio transformation."
 pubDate: 2024-02-03
 image: "./image.jpg"
 ---
