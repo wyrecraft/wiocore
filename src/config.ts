@@ -8,6 +8,6 @@ interface CONFIG {
 export const CONFIG = {
     url: 'https://wiocore.com',
     title: 'Wiocore',
-    description: 'Wiocore: Your trusted source for unbiased reviews and insightful content on a diverse array of software, business essentials, and digital subscriptions, guiding both professionals and consumers with valuable insights for confident decision-making in the ever-evolving world of products and subscriptions.',
+    description: 'Wiocore offers unbiased reviews and insightful content on diverse products, including software and digital subscriptions. With honest evaluations, diverse coverage, and a passion for exploring the latest products, we guide both professionals and consumers for confident decision-making.',
     image: '/social.png',
 };
