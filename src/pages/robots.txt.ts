@@ -4,7 +4,7 @@ const robotsTxt = `
 User-agent: *
 Allow: /
 Disallow: /thanks
-Disallow: /confirmed
+Disallow: /confirmation
 Disallow: /contact/thanks
 
 Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
